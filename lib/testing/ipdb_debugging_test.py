@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 
-from ipdb_debugging import plus_two
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+
+
+from lib.ipdb_debugging import plus_two
 
 class TestIpdbDebugging:
     '''ipdb_debugging.py'''
